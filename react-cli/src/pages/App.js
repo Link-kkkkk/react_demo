@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import common from './common';
 import logo from '../asstes/img/logo.svg';
 import '../asstes/App.css';
+import Comment from '../components/comment'
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
         <p className="App-intro">
           { mockData.data.flow }
         </p>
+        <Comment author={{name:'IronMan'}} text='Texting~~' date='1' counts='1'></Comment>
       </div>
     );
   }
@@ -30,4 +32,5 @@ var mockData = Mock.mock({
   }
 })
 
+document.title = mockData.data.time[0]
 export default App;
