@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import common from './common';
 import logo from '../asstes/img/logo.svg';
 import '../asstes/App.css';
+import Comment from '../components/comment'
+import Toggle from '../components/toggleBtn'
 
 class App extends Component {
   render() {
@@ -11,9 +12,15 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           {/* <h2>Welcome to React</h2> */}
         </div>
-        <p className="App-intro">
+
+        {/* <p className="App-intro">
           { mockData.data.flow }
-        </p>
+        </p> */}
+
+        {/* 注入组件，prop传入 */}
+        {/* <Comment author={{name:'IronMan'}} text='Texting~~' date='1' counts='1'></Comment> */}
+
+        <Toggle></Toggle>
       </div>
     );
   }
@@ -30,4 +37,5 @@ var mockData = Mock.mock({
   }
 })
 
+document.title = mockData.data.time[0]
 export default App;
