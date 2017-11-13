@@ -4,7 +4,7 @@ import '../asstes/App.css';
 import Comment from '../components/comment'
 import Toggle from '../components/toggleBtn'
 
-class App extends Component {
+class logoPage extends Component {
   render() {
     return (
       <div className="App">
@@ -13,13 +13,14 @@ class App extends Component {
           {/* <h2>Welcome to React</h2> */}
         </div>
 
-        {/* <p className="App-intro">
+        <p className="App-intro">
           { mockData.data.flow }
-        </p> */}
+        </p>
 
-        {/* 注入组件，prop传入 */}
-        {/* <Comment author={{name:'IronMan'}} text='Texting~~' date='1' counts='1'></Comment> */}
+        {/* 注入组件，prop传入，组件的插入也同于router的插入 */}
+        <Comment author={{name:'IronMan'}} text='Texting~~' date='1' counts='1'></Comment>
 
+        {/* 切换组件 */}
         <Toggle></Toggle>
       </div>
     );
@@ -38,4 +39,4 @@ var mockData = Mock.mock({
 })
 
 document.title = mockData.data.time[0]
-export default App;
+export default logoPage;
