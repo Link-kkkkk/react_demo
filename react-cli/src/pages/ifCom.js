@@ -40,13 +40,13 @@ class ifCom extends Component {
 
   loginClick() {
     this.setState({ isLogin: true });
-    location.replace("/if/master");
+    // location.replace("/if/master");
     console.log(this.state)
   }
 
   logoutClick() {
     this.setState({ isLogin: false });
-    location.replace("/if/user");
+    // location.replace("/if/user");
     console.log(this.state)
   }
 }
