@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import common from '../pages/common';
 
 class Comment extends Component {
   constructor(props) {

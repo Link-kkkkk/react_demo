@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import common from './common';
+
 import logo from '../asstes/img/logo.svg';
 import '../asstes/App.css';
 import Comment from '../components/comment'

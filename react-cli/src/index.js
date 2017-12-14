@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './asstes/index.css';
-import App from './pages/App';
+
+import Route from './Router'
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Route />, document.getElementById('root'));
 
 registerServiceWorker();
