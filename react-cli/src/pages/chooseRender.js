@@ -7,6 +7,7 @@ class ChooseRender extends Component {
     this.state = {
       isLogin: false
     };
+    
     this.loginClick = this.loginClick.bind(this);
     this.logoutClick = this.logoutClick.bind(this);
   }
@@ -35,7 +36,7 @@ class ChooseRender extends Component {
       return (
         <button className="loginBtn" onClick={props.onClick}>
           Login
-          </button>
+        </button>
       );
     }
 
@@ -73,9 +74,10 @@ class ChooseRender extends Component {
       <div>
         <Greeting isLoggedIn={isLoggedIn} />
         {button}
+        <p>你 <b>{isLoggedIn ? '已登录' : '未登录'}</b></p>
       </div>
     );
   }
 }
 
-export default ChooseRender;
+export default ChooseRender; 
