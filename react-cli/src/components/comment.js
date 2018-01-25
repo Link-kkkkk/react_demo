@@ -4,7 +4,7 @@ class Comment extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      day : parseInt(props.date)
+      day : parseInt(props.date,10),
     }
   }
 
@@ -31,7 +31,7 @@ class Comment extends Component {
     // 要解决它，应该使用回调函数而不是对象来调用setState()。 回调函数将接收先前的state作为第一个参数，并将应用更新时的props作为第二个参数：
     this.setState((prevState, props) => {
       return {
-        day: prevState.day + parseInt(props.counts)
+        day: prevState.day + parseInt(props.counts,10),
       };
     });
 
