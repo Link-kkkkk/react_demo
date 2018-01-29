@@ -40,7 +40,6 @@ class Temperature extends React.Component {
   render() {
     // const value = this.state.value;
     const value = this.props.value;
-    console.log(value)
     const scale = this.props.scale;
     return (
       <fieldset>

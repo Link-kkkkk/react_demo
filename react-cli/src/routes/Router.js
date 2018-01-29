@@ -17,6 +17,7 @@ import ChooseRender from './../pages/chooseRender';
 import list from './../pages/list';
 import form from './../pages/form'
 import upstate from './../pages/upState'
+import combination from './../pages/combination'
 
 const createComponent = (component) => (props) => (
   <Bundle load={component}>
@@ -35,6 +36,7 @@ const MainRouter = () => (
       <Route path="/list" component={list} />
       <Route path="/form" component={form} />
       <Route path="/state" component={upstate} />
+      <Route path="/combination" component={combination} />
     </Switch>
   </Router>
 )
