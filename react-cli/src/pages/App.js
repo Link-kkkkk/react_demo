@@ -35,6 +35,8 @@ class App extends Component {
         {url:"/combination",name:'combination'},
         {url:"/jsxbase",name:'jsxbase'},
         {url:"/es5demo",name:'es5demo'},
+        {url:"/lifeCycle",name:'lifeCycle'},
+        {url:"/domElement",name:'domElement'},
       ]
 
       for (let i = 0; i < urlArr.length; i++) {
