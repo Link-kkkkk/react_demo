@@ -38,7 +38,7 @@ class List extends Component {
     return (
       <div className="listContent">
         <NumberList numbers={numbers} />
-      </div>
+      </div> 
     );
   }
 }

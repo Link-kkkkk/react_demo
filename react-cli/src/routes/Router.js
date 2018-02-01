@@ -18,6 +18,8 @@ import list from './../pages/list';
 import form from './../pages/form'
 import upstate from './../pages/upState'
 import combination from './../pages/combination'
+import jsxbase from './../pages/jsxbase'
+import es5demo from './../pages/es5demo'
 
 const createComponent = (component) => (props) => (
   <Bundle load={component}>
@@ -37,6 +39,8 @@ const MainRouter = () => (
       <Route path="/form" component={form} />
       <Route path="/state" component={upstate} />
       <Route path="/combination" component={combination} />
+      <Route path="/jsxbase" component={jsxbase} />
+      <Route path="/es5demo" component={es5demo} />
     </Switch>
   </Router>
 )

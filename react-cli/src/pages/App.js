@@ -32,7 +32,9 @@ class App extends Component {
         {url:"/list",name:'list'},
         {url:"/form",name:'form'},
         {url:"/state",name:'state'},
-        {url:"/combination",name:'combination'}
+        {url:"/combination",name:'combination'},
+        {url:"/jsxbase",name:'jsxbase'},
+        {url:"/es5demo",name:'es5demo'},
       ]
 
       for (let i = 0; i < urlArr.length; i++) {
