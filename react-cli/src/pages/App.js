@@ -37,6 +37,7 @@ class App extends Component {
         {url:"/es5demo",name:'es5demo'},
         {url:"/lifeCycle",name:'lifeCycle'},
         {url:"/domElement",name:'domElement'},
+        {url:"/destory",name:'destory'},
       ]
 
       for (let i = 0; i < urlArr.length; i++) {

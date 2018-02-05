@@ -22,6 +22,7 @@ import jsxbase from './../pages/jsxbase'
 import es5demo from './../pages/es5demo'
 import lifeCycle from './../pages/lifeCycle'
 import domElement from './../pages/domElement'
+import destory from './../pages/destory'
 
 const createComponent = (component) => (props) => (
   <Bundle load={component}>
@@ -45,6 +46,7 @@ const MainRouter = () => (
       <Route path="/es5demo" component={es5demo} />
       <Route path="/lifeCycle" component={lifeCycle} />
       <Route path="/domElement" component={domElement} />
+      <Route path="/destory" component={destory} />
     </Switch>
   </Router>
 )
